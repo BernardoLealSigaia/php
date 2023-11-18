@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Site Padrão</title>
 </head>
 <body>
     <h1>Página Inicial</h1>
@@ -13,10 +13,11 @@
     $senha = $_POST ["senha"];
 
     if($nome=="Bernardo" and $senha=="123")
-        header('Location: '."site.php");
-    else
-        print("Nome/Senha inválidos!");
-    ?>
+        header('Location: '."trabrestrito.php");
 
+    else
+       print("Senha Inválida!");
+    
+    ?>  
 </body>
 </html>
