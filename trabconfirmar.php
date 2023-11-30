@@ -14,10 +14,10 @@
 
     if($nome=="Bernardo" and $senha=="123")
         header('Location: '."trabrestrito.php");
-
+    elseif($nome=="Maria" and $senha=="123")
+        header('Location: '."trabintermediário.php");
     else
-       print("Senha Inválida!");
-    
+    header('Location: '."trabinternormal.php");
     ?>  
 </body>
-</html>
+</html>                                                                                   

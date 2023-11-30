@@ -1,51 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site do Trabalho</title>
-</head>
-<body>
-<style>
+    <title>Página Principal</title>
+    <style>
         body{
-            margin:0;
+            box-sizing: border-box;
+            margin: 20px;
         }
-        form {
-            background-color: violet;
-            padding: 5px;
-            width: 100%;
-            position: absolute;
-            height: 100%;
-            text-align: center;
-            
+        form{
+            background-color: rgba(80,80,80,70%);
+            padding: 10px;
+            margin: 5px;
+            width: 50%;
+    
         }
-
-        label,input[type="text"], input[type="password"]
-        {
-            width: 85%;
-            padding: 7px;
-            margin-top: 100px;
-        
+        label,input[type="text"], input[type="password"]{
+            /* backgroud-color: rgba(100,100,100,30%)*/
+            padding: 7px; /area de escrita no forms/
+            margin: 3px; /margem cinza/
+            width: 90%; /largura do espaço da escrita/
         }
-
-        input[type="submit"]{
-            text-align: left;
-        }
-
     </style>
 
 </head>
 <body>
+   
     <form action="trabconfirmar.php" method="POST">
         <label for="nome">Nome:</label>
         <input id="nome" type="text" name="nome"> <br>
         <label for="senha">Senha:</label>
         <input id="senha" type="password" name="senha"> <br>
-        <input id="botão" type="submit">
+        <input type="submit"> 
+        
+
     </form>
-
-    
-
 </body>
 </html>
